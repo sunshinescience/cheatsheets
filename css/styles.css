@@ -1,0 +1,61 @@
+body {
+    background-color: rgb(241, 245, 247);
+    /* background-color: #ddd; */
+    font-size: 16px;
+}
+
+#wrapper {
+    margin: 50px;
+}
+
+header {
+    font-weight: bold;
+    font-family: Georgia;
+    /* background-color: Azure; */
+    text-align: center;
+}
+
+main {
+    text-align: left;
+}
+
+table {
+    width: 90%;
+    text-align: left;
+    border-collapse: collapse; /* Removes space between cells */
+    margin-left: auto; /* Center the table */
+    margin-right: auto; /* Center the table */
+}
+
+.code {
+    font-family: monospace, "Lucida Console", Courier;
+    color: rgb(104, 102, 102);
+    font-size: 0.9em;
+}
+
+thead {
+    background-color: rgb(212, 222, 238);
+}
+
+
+th {
+    background-color: rgb(212, 222, 238);
+}
+
+
+td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(odd) {
+    background-color: white;
+}
+
+tr:hover {
+    background-color: #ddd;
+}

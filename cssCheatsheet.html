@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cheatsheet webpage</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- External link -->
+    <link rel="stylesheet" type="text/CSS" href="css/styles.css">
+</head>
+<body>
+    <div id="wrapper">
+        <header><h1>CSS Cheatsheet</h1></header>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="htmlCheatsheet.html">HTML</a>
+            <a href="jsCheatsheet.html">JS</a>
+        </nav>
+        <main>
+            <h2>CSS Selectors</h2>
+            <p>CSS selectors let you identify or select specific HTML elements. A couple of references can be found at 
+                <a href="https://www.w3schools.com/cssref/css_selectors.asp">W3 schools</a>, the 
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors">documentation</a> and at this 
+                <a href="https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048">page</a>.
+                 The three most popular include id, class, and element (i.e., <em>type</em>).
+            </p>
+            <p>Whatever selector you choose, the workflow will be the same.</p>
+            <ol>
+                <li>Select an element to style.</li>
+                <li>Create an object.</li>
+                <li>Write the CSS rule for that element’s property you wish to style.</li>
+            </ol>
+            <p class="code">
+                selector {
+                    property: value;
+                    }
+           
+            </p>
+            <table>
+                <caption>Most frequently used CSS selectors</caption>
+                <thead>
+                    <th>Selector</th>
+                    <th>Example</th>
+                    <th>Description</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="code">#id</td>
+                        <td class="code">#firstName</td>
+                        <td>Selects the element with id="firstName"</td>
+                    </tr>
+                    <tr>
+                        <td class="code">.class</td>
+                        <td class="code">.intro</td>
+                        <td>Selects all elements with class="intro"</td>
+                    </tr>
+                    <tr>
+                        <td class="code">element</td>
+                        <td class="code">p</td>
+                        <td>Selects all &ltp&gt elements</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Combinator Selectors</h2>
+            <p>
+            When you need to be more specific with your selectors, you can combine them. There are four different combinators in CSS:
+
+            </p>
+            <table>
+                <caption>Combinator Selectors</caption>
+                <thead>
+                    <th>Selector</th>
+                    <th>Example</th>
+                    <th>Description</th>
+                </thead>
+                <tr>
+                    <td class="code">.class1.class2</td>
+                    <td class="code">.className1.className2</td>
+                    <td>Selects all elements with both className1 and className2</td>
+                </tr>
+                <tr>
+                    <td class="code">.class1 .class2</td>
+                    <td class="code">.className1 .className2</td>
+                    <td>Selects all elements with className2 that is a <em>descendant</em> of an element with className1</td>
+                </tr>
+                <tr>
+                    <td class="code">element, element</td>
+                    <td class="code">div, p</td>
+                    <td>Selects all &ltdiv&gt elements and all &ltp&gt elements</td>
+                </tr>
+                <tr>
+                    <td class="code">element + element</td>
+                    <td class="code">div + p</td>
+                    <td>Selects the first &ltp&gt element that is immediately after &ltdiv&gt elements</td>
+                </tr>
+                <tr>
+                    <td class="code">element > element</td>
+                    <td class="code">div > p</td>
+                    <td>Selects all &ltp&gt elements where the parent is a &ltdiv&gt element</td>
+                </tr>
+                <tr>
+                    <td class="code">element ~ element</td>
+                    <td class="code">ul ~ p</td>
+                    <td> Selects any &ltp&gt elements that follow a &ltul&gt element</td>
+                </tr>
+            </table>
+            <h2>Attribute Selectors</h2>
+            <p>
+            An attribute selector matches elements based on the presence or value of a given attribute.
+            </p>
+            <table>
+                <caption>Attribute Selectors</caption>
+                <thead>
+                    <th>Selector</th>
+                    <th>Example</th>
+                    <th>Description</th>
+                </thead>
+                <tr>
+                    <td class="code">element[attr]</td>
+                    <td class="code">a[title]</td>
+                    <td> Selects the anchor tags that have a title attribute</td>
+                </tr>
+            </table>
+            <h2>Pseudo-classes</h2>
+            <p>A <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes">pseudo-class</a> is a keyword added to a selector that specifies a 
+            special state of the selected element(s), such as <span class="code">:hover</span>, 
+            <span class="code">:focus</span>, <span class="code">:active</span>, <span class="code">:visited</span>.
+            <br><br>The syntax of a pseudo-class is as follows: <br> <span class="code">selector:pseudo-class{ <br> &nbsp;&nbsp;property: value; <br>}</span>
+       
+            </p>
+            <table>
+                <caption>Pseudo-classes</caption>
+                <thead>
+                    <th>Selector</th>
+                    <th>Example</th>
+                    <th>Description</th>
+                </thead>
+                <tr>
+                    <td class="code">:pseudo-class</td>
+                    <td class="code">a:active</td>
+                    <td>Selects the active link</td>
+                </tr>
+            </table>
+        </main>
+        <!-- <footer>Copyright &copy;Sunshine 2018</footer> -->
+    </div>
+</body>
+</html>
